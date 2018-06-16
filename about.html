@@ -1,21 +1,47 @@
 <DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tharmi</title>
-        <link rel="shortcut icon" href="./assets/images/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/normalize.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/aboutStyle.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+        <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Tharmi</title>
+            <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+            <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/normalize.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
         <div id="nav">
-            <img src=./assets/images/logo.jpg id="logoNav">
+            <img src=./assets/images/logo.JPG id="logoNav">
             <a id="aboutNav" href="about.html">About</a>
             <a id="portfolioNav"href="portfolio.html">Portfolio</a>
-            <a id="portfolioNav" href="contact.html">Contact</a>
+            <span id="email-tooltip" tooltip="Click to copy my email address to your clipboard"><a id="email" data-clipboard-text="tharmi93@gmail.com"><i class="material-icons icons">email</i></a></span>
+            <a class="icons"target="_blank"href="http://linkedin.com/in/tharmi-sri-a85968160"><img src="assets/images/linkedin.svg"></a>
+            <a class="icons"target="_blank"href="https://github.com/Silentox"><img src="assets/images/github.svg"></a>
+        
         </div>
+            
+        
+        
+        <div id="landingContent">
+           <span class="type"></span>
+        </div>
+                   
+        
+        
+        <!-- Script tags -->
+         
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script>
+        <script type="text/javascript">
+        let emailTooltip=document.getElementById("email");
+        emailTooltip.addEventListener("click", function(){
+            new ClipboardJS('#email');
+        
+        })
+        </script>
+        </body>
+        </html>
